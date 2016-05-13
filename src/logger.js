@@ -11,6 +11,7 @@ import chalk from 'chalk';
 //Options 
 let debug = false; 
 let divider = true; 
+let compact = true; 
 
 //Basic Winston Logger
 winston.loggers.add('logger', {
@@ -28,6 +29,7 @@ winston.loggers.add('logger', {
  * 
  */
 function logger(){
+  if(!compact) newLine(); 
   if(divider) console.log('\n------------START WINSTON------------');
   for(let i=0; i < arguments.length; i++){
     log(arguments[i]);
@@ -36,6 +38,11 @@ function logger(){
     }
   }
   if(divider) console.log('-------------END WINSTON-------------\n');
+  if(!compact) newLine(); 
+}
+
+function newLine(){
+  console.log(''); 
 }
 
 
@@ -54,5 +61,8 @@ function log(arg){
   }
 }
 
-module.exports = logger;
 
+module.exports = logger;
+module.exports.setDebug = function(bool){debug = bool ? true : false;};
+module.exports.setDivider = function(bool){divider = bool ? true : false;};
+module.exports.setCompact = function(bool){compact = bool ? true : false;};

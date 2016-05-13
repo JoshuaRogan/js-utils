@@ -1,11 +1,15 @@
 "use strict";
 
 import logger from './logger.js';
+// logger.setDivider(false); 
+// logger.setDebug(true); 
+// logger.setCompact(false); 
 
-// logger('hello world'); 
+// class Test{
 
-function test(a){
-  console.log(a, 'test'); 
-}
+// }
 
-export {logger, test}
+// logger('test'); 
+// logger(Test); 
+
+export {logger}
