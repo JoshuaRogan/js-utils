@@ -1,0 +1,23 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "Josh Rogan util kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaRogan/js-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utils"
+  ],
+  "author": "Josh Rogan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaRogan/js-utils/issues"
+  },
+  "homepage": "https://github.com/JoshuaRogan/js-utils#readme"
+}
