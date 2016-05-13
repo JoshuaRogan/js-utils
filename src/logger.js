@@ -10,7 +10,7 @@ import chalk from 'chalk';
 
 //Options 
 let debug = false; 
-let divider = true; 
+let divider = false; 
 let compact = true; 
 
 //Basic Winston Logger
