@@ -2,11 +2,12 @@
   "name": "js-utils",
   "version": "1.0.0",
   "description": "Josh Rogan util kit",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
     "index": "npm run build && echo ' ' && node lib/index.js",
-    "logger": "npm run build && echo ' ' && node lib/logger.js"
+    "logger": "npm run build && echo ' ' && node lib/logger.js",
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
