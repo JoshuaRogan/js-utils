@@ -12,6 +12,7 @@ import chalk from 'chalk';
 let debug = false; 
 let divider = false; 
 let compact = true; 
+let level = true;
 
 //Basic Winston Logger
 winston.loggers.add('logger', {
@@ -20,7 +21,7 @@ winston.loggers.add('logger', {
       colorize: true,
       prettyPrint: true,
       label: false,
-      showLevel : true
+      showLevel : level
     }
 });
 
@@ -66,3 +67,4 @@ module.exports = logger;
 module.exports.setDebug = function(bool){debug = bool ? true : false;};
 module.exports.setDivider = function(bool){divider = bool ? true : false;};
 module.exports.setCompact = function(bool){compact = bool ? true : false;};
+module.exports.setLevel = function(bool){level = bool ? true : false;};
